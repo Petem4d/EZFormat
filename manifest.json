@@ -1,0 +1,12 @@
+{
+    "name": "Easy Format",
+    "description": "Formatting made quick and easy",
+    "version": "0.0.0",
+    "manifest_version": 3,
+    "author": "Peter Ford",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html"
+    }
+    
+}
