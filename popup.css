@@ -1,0 +1,14 @@
+body{
+    padding: 20px 20px;
+}
+
+#diffFonts {
+    width: 300px;
+    float: right;
+}
+
+#formButt {
+    margin-top: 10px;
+    width: 100%;
+}
+

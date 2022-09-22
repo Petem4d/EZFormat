@@ -10,10 +10,10 @@ function formFunc(){
     if(checks[0].checked){
         txt = removeWhitespace();
     }
-    else if(checks[1].checked){
+    if(checks[1].checked){
         txt = removeSpecifics();
     }
-    else if(checks[2].checked){
+    if(checks[2].checked){
         normalizeFont();
     }
     document.getElementById("demo").innerHTML = txt;
@@ -31,23 +31,19 @@ function removeSpecifics(){
 }
 function normalizeFont(){
     var fontSelect = document.getElementById("diffFonts")
-    var selectedValue = fontSelect.options[fontSelect.selectedIndex].value
-    /*
-    if(selectedValue = "same"){
-        return;
-    }
-    */
-    document.getElementById("demo").style.fontFamily = selectedValue;
+    var selectedValue1 = fontSelect.options[fontSelect.selectedIndex].value
+   
+    document.getElementById("demo").style.fontFamily = selectedValue1;
+
+
     
-    //var fontSize = document.getElementById("sizeBox").value;
-    //document.getElementById("demo").style.fontSize = fontSize;
 }
 
 function resendText(){
     console.log(txt);
     document.getElementById("formatBox").value = txt;
     resetButt.setAttribute("hidden", "hidden");
-    document.getElementById("demo").innerHTML = "";
+    document.getElementById("demo").innerHTML = "";    
 
 }
 
